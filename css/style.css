@@ -9787,25 +9787,30 @@ a.text-dark:hover, a.text-dark:focus {
 
 
 
-/* Responsive modal video styling */
+/* Modal video agar full lebar dan tinggi responsif */
 .modal-content {
   background-color: transparent;
   border: none;
   box-shadow: none;
 }
 
-.modal-dialog {
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.modal-body {
+  padding: 0;
 }
 
-/* YouTube iframe full size */
+/* YouTube iframe responsif */
 .embed-responsive {
   position: relative;
+  display: block;
   width: 100%;
-  padding-top: 56.25%;
+  padding: 0;
+  overflow: hidden;
+}
+
+.embed-responsive::before {
+  display: block;
+  content: '';
+  padding-top: 56.25%; /* 16:9 ratio */
 }
 
 .embed-responsive iframe {
@@ -9817,15 +9822,31 @@ a.text-dark:hover, a.text-dark:focus {
   border: 0;
 }
 
-/* Video lokal full size */
-#localVideo {
-  width: 100%;
-  max-height: 80vh;
-  object-fit: cover;
-  border-radius: 12px;
+/* Responsive Fullscreen Video */
+#videoModalLocal .modal-dialog {
+  max-width: 90vw;
+  width: 50%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#videoModalLocal video {
-  max-width: 100%;
+#videoModalLocal .modal-content {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  width: 100%;
   height: auto;
+  max-height: 90vh;
 }
+
+#videoModalLocal video#localVideo {
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
