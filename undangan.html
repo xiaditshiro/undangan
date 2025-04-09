@@ -67,9 +67,10 @@
                                 <div class="border-top border-bottom border-light py-3 px-4 mb-2">
                                     <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">We're getting married</h3>
                                 </div>
-                                <div class="border-top border-bottom border-light py-3 px-4">
-                                    <h3 id="guest-name" class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;"></h3>
-                                </div>
+                                <!-- <div class="border-top border-bottom border-light py-3 px-4"> -->
+                                    <h3 id="guest-name" class="guest-name mt-3 mb-3 text-center"></h3>
+
+                                <!-- </div> -->
                             </div>                            
                             <button type="button" class="btn-play mx-auto"
                                     data-toggle="modal"
@@ -89,9 +90,10 @@
                             <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
                                 <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">We're getting married</h3>
                             </div>
-                            <div class="border-top border-bottom border-light py-3 px-4">
-                                <h3 id="guest-name" class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;"></h3>
-                            </div>
+                            <!-- <div class="border-top border-bottom border-light py-3 px-4"> -->
+                                <h3 id="guest-name" class="guest-name mt-3 mb-3 text-center"></h3>
+
+                            <!-- </div> -->
                             <button type="button" class="btn-play mx-auto" data-toggle="modal" data-target="#videoModalLocal">
                                 <span></span>
                             </button>
@@ -529,17 +531,18 @@
 
 
       <!-- video yt -->
-     <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down modal-lg" role="document">
-    <div class="modal-content bg-transparent border-0">
-      <div class="modal-body p-0">
-        <div class="embed-responsive embed-responsive-16by9 w-100">
-          <iframe class="embed-responsive-item" id="video" allowfullscreen></iframe>
+      <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down modal-lg" role="document">
+          <div class="modal-content bg-transparent border-0">
+            <div class="modal-body p-0">
+              <div class="yt-container">
+                <iframe id="video" allowfullscreen allow="autoplay" style="width: 100%; height: 100%; border-radius: 12px;"></iframe>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
+      
 
       
       
@@ -583,18 +586,18 @@
 
 
     <script>
-        // Ambil parameter "to" dari URL
         const params = new URLSearchParams(window.location.search);
         const namaTamu = params.get("to");
       
-        // Jika ada nama tamu, tampilkan di semua elemen #guest-name
         if (namaTamu) {
           const guestElements = document.querySelectorAll("#guest-name");
           guestElements.forEach(el => {
-            el.textContent = `Untuk ${decodeURIComponent(namaTamu)}`;
+            el.innerHTML = `<span style="font-size: 16px;">Kepada Yth,</span><br>${decodeURIComponent(namaTamu)}`;
           });
         }
       </script>
+      
+      
     
     <!-- audio -->
     <script>

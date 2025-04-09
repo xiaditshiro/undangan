@@ -9814,3 +9814,16 @@
     overflow: hidden;
   }
   
+
+
+
+
+
+  .guest-name {
+    font-family: 'Great Vibes', cursive;
+    font-size: 36px;
+    color: #fff;
+    line-height: 1.4;
+    font-weight: normal;
+  }
+  

@@ -41,7 +41,8 @@
                                 <div class="border-top border-bottom border-light py-3 px-4 mb-2">
                                     <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">We're getting married</h3>
                                 </div>
-                                <h3 id="guest-name" class="text-uppercase font-weight-normal text-white mt-3 mb-3" style="letter-spacing: 2px;"></h3>
+                                <h3 id="guest-name" class="guest-name mt-3 mb-3 text-center"></h3>
+
 
                             </div>                            
                             <a href="undangan.html?play=true" id="open-invite" class="btn btn-primary">Buka Undangan</a>
@@ -58,7 +59,8 @@
                             <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
                                 <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">We're getting married</h3>
                             </div>
-                            <h3 id="guest-name" class="text-uppercase font-weight-normal text-white mt-3 mb-3" style="letter-spacing: 2px;"></h3>
+                            <h3 id="guest-name" class="guest-name mt-3 mb-3 text-center"></h3>
+
 
                             <a href="undangan.html?play=true" id="open-invite" class="btn btn-primary">Buka Undangan</a>
 
@@ -131,14 +133,25 @@
         const params = new URLSearchParams(window.location.search);
         const namaTamu = params.get("to");
       
-        // Jika ada nama tamu, tampilkan di semua elemen #guest-name
+        // Tampilkan nama tamu di index.html
         if (namaTamu) {
           const guestElements = document.querySelectorAll("#guest-name");
           guestElements.forEach(el => {
-            el.textContent = `Untuk ${decodeURIComponent(namaTamu)}`;
+            el.innerHTML = `<span style="font-size: 16px;">Kepada Yth,</span><br>${decodeURIComponent(namaTamu)}`;
+
+
           });
         }
+      
+        // Ubah href tombol supaya teruskan ke undangan.html
+        const openBtn = document.getElementById("open-invite");
+        if (openBtn && namaTamu) {
+          openBtn.href = `undangan.html?to=${encodeURIComponent(namaTamu)}&play=true`;
+        } else if (openBtn) {
+          openBtn.href = `undangan.html?play=true`;
+        }
       </script>
+      
     
     <!-- audio -->
     <!-- <script>
