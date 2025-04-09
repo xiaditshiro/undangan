@@ -72,11 +72,11 @@
                                 </div>
                             </div>                            
                             <button type="button" class="btn-play mx-auto"
-        data-toggle="modal"
-        data-src="https://www.youtube.com/embed/yxqg-o3M77w"
-        data-target="#videoModal">
-  <span></span>
-</button>
+                                    data-toggle="modal"
+                                    data-src="https://www.youtube.com/embed/yxqg-o3M77w"
+                                    data-target="#videoModal">
+                            <span></span>
+                            </button>
 
                         </div>
                     </div>
@@ -529,12 +529,12 @@
 
 
       <!-- video yt -->
-      <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down modal-lg" role="document">
+      <div class="modal fade" id="videoModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
           <div class="modal-content bg-transparent border-0">
             <div class="modal-body p-0">
               <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" id="video" src="" allow="autoplay" allowfullscreen></iframe>
+                <iframe id="video" class="embed-responsive-item" src="" allow="autoplay" allowfullscreen></iframe>
               </div>
             </div>
           </div>
@@ -542,20 +542,22 @@
       </div>
       
       
+      
 
       <!-- video local -->
-      <div class="modal fade" id="videoModalLocal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down modal-lg" role="document">
+      <div class="modal fade" id="videoModalLocal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
           <div class="modal-content bg-transparent border-0">
             <div class="modal-body p-0">
-              <video id="localVideo" controls style="width: 100%; border-radius: 12px;">
+              <video id="localVideo" controls>
                 <source src="video/y2mate-com - Your Name Kimi No Nawa AMV Edit  Lady Killers II 4k 60fps_1080pFHR.mp4" type="video/mp4">
-                Browser kamu tidak mendukung video.
+                Browser tidak mendukung video.
               </video>
             </div>
           </div>
         </div>
       </div>
+      
       
 
     <!-- Scroll to Bottom -->
