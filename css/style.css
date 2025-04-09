@@ -9762,3 +9762,25 @@ a.text-dark:hover, a.text-dark:focus {
     border-right: none !important;
   }
 }
+
+
+
+#open-invite {
+  background-color: #ffffff;        /* Warna latar putih */
+  color: #333;                      /* Warna teks */
+  border: 2px solid #ffffff;        /* Bingkai putih */
+  padding: 10px 28px;               /* Spasi dalam tombol */
+  font-size: 16px;                  /* Ukuran teks */
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 30px;              /* Sudut bulat */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+#open-invite:hover {
+  background-color: transparent;    /* Saat hover jadi transparan */
+  color: #ffffff;                   /* Teks jadi putih */
+  border-color: #ffffff;            /* Garis tetap putih */
+  cursor: pointer;
+}
