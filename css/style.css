@@ -9784,3 +9784,23 @@ a.text-dark:hover, a.text-dark:focus {
   border-color: #ffffff;            /* Garis tetap putih */
   cursor: pointer;
 }
+
+
+
+/* style video */
+@media (max-width: 576px) {
+  .modal-dialog {
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .modal-content {
+    border-radius: 0;
+  }
+
+  #video, #localVideo {
+    width: 100% !important;
+    height: auto;
+  }
+}
