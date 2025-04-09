@@ -9822,31 +9822,25 @@ a.text-dark:hover, a.text-dark:focus {
   border: 0;
 }
 
-/* Responsive Fullscreen Video */
 #videoModalLocal .modal-dialog {
-  max-width: 90vw;
-  width: 50%;
-  height: 100vh;
+  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 #videoModalLocal .modal-content {
   background-color: transparent;
   border: none;
   padding: 0;
-  width: 100%;
-  height: auto;
-  max-height: 90vh;
 }
 
-#videoModalLocal video#localVideo {
-  width: 100%;
-  height: auto;
-  max-height: 80vh;
-  border-radius: 12px;
+#videoModalLocal video {
+  width: 100% !important;
+  height: auto !important;
+  max-height: 90vh !important;
   object-fit: cover;
+  border-radius: 12px;
+  display: block;
 }
+
 
