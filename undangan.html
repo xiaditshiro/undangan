@@ -529,12 +529,15 @@
 
 
       <!-- video yt -->
-      <div class="modal fade" id="videoModal" tabindex="-1" role="dialog">
+      <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
           <div class="modal-content bg-transparent border-0">
             <div class="modal-body p-0">
+              <button type="button" class="close text-white position-absolute" style="top: 10px; right: 20px;" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true" style="font-size: 2rem;">&times;</span>
+              </button>
               <div class="embed-responsive embed-responsive-16by9">
-                <iframe id="video" class="embed-responsive-item" src="" allow="autoplay" allowfullscreen></iframe>
+                <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always" allow="autoplay"></iframe>
               </div>
             </div>
           </div>
@@ -543,20 +546,25 @@
       
       
       
+      
 
       <!-- video local -->
-      <div class="modal fade" id="videoModalLocal" tabindex="-1" role="dialog">
+      <div class="modal fade" id="videoModalLocal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
           <div class="modal-content bg-transparent border-0">
-            <div class="modal-body p-0">
-              <video id="localVideo" controls>
-                <source src="video/y2mate-com - Your Name Kimi No Nawa AMV Edit  Lady Killers II 4k 60fps_1080pFHR.mp4" type="video/mp4">
-                Browser tidak mendukung video.
+            <div class="modal-body p-0 position-relative">
+              <button type="button" class="close text-white position-absolute" style="top: 10px; right: 20px;" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true" style="font-size: 2rem;">&times;</span>
+              </button>
+              <video id="localVideo" controls style="width: 100%; border-radius: 12px;">
+                <source src="video/nama-video-kamu.mp4" type="video/mp4">
+                Browser kamu tidak mendukung video.
               </video>
             </div>
           </div>
         </div>
       </div>
+      
       
       
 
