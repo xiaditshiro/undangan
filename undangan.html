@@ -22,6 +22,10 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
@@ -61,7 +65,7 @@
                 <div class="carousel-item position-relative active" style="height: 100vh; min-height: 400px;">
                     <img class="position-absolute w-100 h-100" src="img/ngakan2.jpg" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 900px;">
+                        <div data-aos="zoom-in-up" class="p-3" style="max-width: 900px;">
                             <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Ngakan & Tatum</h1>
                             <div class="d-inline-block text-center">
                                 <div class="border-top border-bottom border-light py-3 px-4 mb-2">
@@ -85,7 +89,7 @@
                 <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
                     <img class="position-absolute w-100 h-100" src="img/carousel-1.jpg" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 900px;">
+                        <div data-aos="zoom-in-up" class="p-3" style="max-width: 900px;">
                             <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Jack & Rose</h1>
                             <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
                                 <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">We're getting married</h3>
@@ -139,14 +143,14 @@
     <!-- About Start -->
     <div class="container-fluid py-5" id="about">
         <div class="container py-5">
-            <div class="section-title position-relative text-center">
+            <div data-aos="fade-up" class="section-title position-relative text-center">
                 <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">About</h6>
                 <h1 class="font-secondary display-4">Groom & Bride</h1>
                 <i class="far fa-heart text-dark"></i>
             </div>
             <div class="row m-0 mb-4 mb-md-0 pb-2 pb-md-0">
-                <div class="col-md-6 p-0 text-center text-md-right">
-                    <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-5">
+                <div data-aos="fade-right" class="col-md-6 p-0 text-center text-md-right">
+                    <div  class="h-100 d-flex flex-column justify-content-center bg-secondary p-5">
                         <h3 class="mb-3">The Groom</h3>
                         <p>Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.</p>
                         <h3 class="font-secondary font-weight-normal text-muted mb-3"><i class="fa fa-male text-primary pr-3"></i>Ngakan</h3>
@@ -158,15 +162,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 p-0" style="min-height: 400px;">
+                <div data-aos="fade-left" class="col-md-6 p-0" style="min-height: 400px;">
                     <img class="position-absolute w-100 h-100" src="img/ngakan.jpg" style="object-fit: cover;">
                 </div>
             </div>
             <div class="row m-0">
-                <div class="col-md-6 p-0" style="min-height: 400px;">
+                <div data-aos="fade-right" class="col-md-6 p-0" style="min-height: 400px;">
                     <img class="position-absolute w-100 h-100" src="img/tunang-ngakan.jpg" style="object-fit: cover;">
                 </div>
-                <div class="col-md-6 p-0 text-center text-md-left">
+                <div data-aos="fade-left" class="col-md-6 p-0 text-center text-md-left">
                     <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-5">
                         <h3 class="mb-3">The Bride</h3>
                         <p>Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.</p>
@@ -188,17 +192,17 @@
     <!-- Story Start -->
     <div class="container-fluid py-5" id="story">
         <div class="container pt-5 pb-3">
-            <div class="section-title position-relative text-center">
+            <div data-aos="fade-up" class="section-title position-relative text-center">
                 <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Story</h6>
                 <h1 class="font-secondary display-4">Our Love Story</h1>
                 <i class="far fa-heart text-dark"></i>
             </div>
             <div class="container timeline position-relative p-0">
                 <div class="row">
-                    <div class="col-md-6 text-center text-md-right">
+                    <div data-aos="fade-right" class="col-md-6 text-center text-md-right">
                         <img class="img-fluid mr-md-3" src="img/story-1.jpg" alt="">
                     </div>
-                    <div class="col-md-6 text-center text-md-left">
+                    <div data-aos="fade-left" class="col-md-6 text-center text-md-left">
                         <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
                             <h4 class="mb-2">First Meet</h4>
                             <p class="text-uppercase mb-2">01 Jan 2023</p>
@@ -207,22 +211,22 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6 text-center text-md-right">
+                    <div data-aos="fade-right" class="col-md-6 text-center text-md-right">
                         <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
                             <h4 class="mb-2">First Date</h4>
                             <p class="text-uppercase mb-2">01 Jan 2023</p>
                             <p class="m-0">Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.</p>
                         </div>
                     </div>
-                    <div class="col-md-6 text-center text-md-left">
+                    <div data-aos="fade-left" class="col-md-6 text-center text-md-left">
                         <img class="img-fluid ml-md-3" src="img/story-2.jpg" alt="">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6 text-center text-md-right">
+                    <div  data-aos="fade-right" class="col-md-6 text-center text-md-right">
                         <img class="img-fluid mr-md-3" src="img/story-3.jpg" alt="">
                     </div>
-                    <div class="col-md-6 text-center text-md-left">
+                    <div data-aos="fade-left" class="col-md-6 text-center text-md-left">
                         <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
                             <h4 class="mb-2">Proposal</h4>
                             <p class="text-uppercase mb-2">01 Jan 2023</p>
@@ -231,14 +235,14 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6 text-center text-md-right">
+                    <div data-aos="fade-right" class="col-md-6 text-center text-md-right">
                         <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
                             <h4 class="mb-2">Enagagement</h4>
                             <p class="text-uppercase mb-2">01 Jan 2025</p>
                             <p class="m-0">Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.</p>
                         </div>
                     </div>
-                    <div class="col-md-6 text-center text-md-left">
+                    <div data-aos="fade-left" class="col-md-6 text-center text-md-left">
                         <img class="img-fluid ml-md-3" src="img/story-4.jpg" alt="">
                     </div>
                 </div>
@@ -250,7 +254,7 @@
 
     <!-- Gallery Start -->
     <div class="container-fluid bg-gallery" id="gallery" style="padding: 120px 0; margin: 90px 0;">
-        <div class="section-title position-relative text-center" style="margin-bottom: 120px;">
+        <div data-aos="fade-up" class="section-title position-relative text-center" style="margin-bottom: 120px;">
             <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Gallery</h6>
             <h1 class="font-secondary display-4 text-white">Our Photo Gallery</h1>
             <i class="far fa-heart text-white"></i>
@@ -292,6 +296,18 @@
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-3.jpg" alt="">
+                <a href="img/gallery-6.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-4.jpg" alt="">
+                <a href="img/gallery-6.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
         </div>
     </div>
     <!-- Gallery End -->
@@ -304,18 +320,18 @@
     <!-- Event Start -->
     <div class="container-fluid py-5" id="event">
         <div class="container py-5">
-            <div class="section-title position-relative text-center">
+            <div data-aos="fade-up" class="section-title position-relative text-center">
                 <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Event</h6>
                 <h1 class="font-secondary display-4">Our Wedding Event</h1>
                 <i class="far fa-heart text-dark"></i>
             </div>
-            <div class="row justify-content-center">
+            <div data-aos="fade-up" class="row justify-content-center">
                 <div class="col-md-6 text-center">
                     <h5 class="font-weight-normal text-muted mb-3 pb-3">Clita ipsum aliquyam dolor diam dolores elitr nonumy. Rebum sea vero ipsum eirmod tempor kasd. Diam amet lorem erat eos sit lorem elitr justo</h5>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6 border-right border-primary">
+                <div data-aos="fade-right" class="col-md-6 border-right border-primary">
                     <div class="text-center text-md-right mr-md-3 mb-4 mb-md-0">
                         <img class="img-fluid mb-4" src="img/event-1.jpg" alt="">
                         <h4 class="mb-3">The Reception</h4>
@@ -323,7 +339,7 @@
                         <p class="mb-0">12:00AM - 13:00PM</p>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div data-aos="fade-left" class="col-md-6">
                     <div class="text-center text-md-left ml-md-3">
                         <img class="img-fluid mb-4" src="img/event-2.jpg" alt="">
                         <h4 class="mb-3">Wedding Party</h4>
@@ -333,7 +349,7 @@
                 </div>
             </div>
                 <!-- Countdown Start -->
-            <div class="container-fluid bg-light py-5">
+            <div data-aos="fade-up" class="container-fluid bg-light py-5">
                 <div class="container text-center">
                 <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Waktu Menuju Acara</h6>
                 <h1 class="font-secondary display-4 mb-4">Acara Dimulai Dalam</h1>
@@ -353,7 +369,7 @@
 
     <!-- Friends & Family Start -->
     <div class="container-fluid py-5" id="family">
-        <div class="container pt-5 pb-3">
+        <div data-aos="fade-up" class="container pt-5 pb-3">
             <div class="section-title position-relative text-center">
                 <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Friends & Family</h6>
                 <h1 class="font-secondary display-4">Groomsmen & Bridesmaid</h1>
@@ -465,7 +481,7 @@
 
 
 <!-- Maps Start -->
-<div class="container-fluid py-5 bg-light" id="maps" style="margin-top: 100px;">
+<div data-aos="fade-up" class="container-fluid py-5 bg-light" id="maps" style="margin-top: 100px;">
     <div class="container py-5">
         <div class="section-title position-relative text-center mb-5">
             <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Location</h6>
@@ -487,16 +503,16 @@
     <!-- Gift Start -->
     <div class="p-4 rounded" style="background-color: #dfeffc; border: 2px solid #E47A2E;">
     <div class="container py-5">
-        <div class="section-title position-relative text-center mb-5">
+        <div data-aos="fade-up" class="section-title position-relative text-center mb-5">
             <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Send Gift</h6>
             <h1 class="font-secondary display-4">Kirim Hadiah</h1>
             <i class="far fa-heart text-dark"></i>
         </div>
         <div class="row justify-content-center">
             <div class="col-md-8 text-center">
-                <p class="mb-4">Doa restu Anda merupakan hadiah terindah bagi kami. Namun, jika Anda ingin mengirimkan tanda kasih, berikut informasi rekening kami:</p>
+                <p data-aos="fade-up" class="mb-4">Doa restu Anda merupakan hadiah terindah bagi kami. Namun, jika Anda ingin mengirimkan tanda kasih, berikut informasi rekening kami:</p>
                 
-                <div class="p-4 rounded" style="background-color: #EDF5F7; border: 2px solid #E47A2E;">
+                <div data-aos="fade-up" class="p-4 rounded" style="background-color: #EDF5F7; border: 2px solid #E47A2E;">
                     <h5 class="text-dark font-weight-bold mb-2">BCA - 1234567890</h5>
                     <p class="mb-3">a.n. Jack & Rose</p>
                     <img src="img/qr-dana.png"QR Code" class="img-fluid" style="max-width: 200px;">
@@ -509,7 +525,7 @@
 
 <!-- Ucapan & Doa Start -->
 <!-- Ucapan & Doa Start -->
-<div class="container-fluid py-5" id="rsvp">
+<div data-aos="fade-up" class="container-fluid py-5" id="rsvp">
     <div class="container py-5">
         <div class="section-title position-relative text-center">
             <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Ucapan & Doa</h6>
@@ -601,7 +617,12 @@
       </div>
       
       
-      
+      <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+
 
     <!-- Scroll to Bottom -->
     <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
